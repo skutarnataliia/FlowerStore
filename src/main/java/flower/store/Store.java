@@ -5,7 +5,7 @@ import java.util.List;
 
 import flower.filters.SearchFilter;
 
-public abstract class Store {
+public class Store {
     private List<Item> items;
     public List<Item> search(SearchFilter filter){
         List<Item> foundItems = new ArrayList<>();
