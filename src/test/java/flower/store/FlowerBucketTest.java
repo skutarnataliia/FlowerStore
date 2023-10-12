@@ -20,7 +20,7 @@ public class FlowerBucketTest {
     @Test
     public void testGetPrice() {
         FlowerBucket flowerBucket = new FlowerBucket();
-        Assertions.assertEquals(0.0, flowerBucket.getPrice(), 0.01);
+        Assertions.assertEquals(0.0, flowerBucket.getPrice());
     }
 
 
@@ -29,7 +29,7 @@ public class FlowerBucketTest {
         FlowerPack flowerPack = new FlowerPack(flower, 5.0);
         FlowerBucket flowerBucket = new FlowerBucket();
         flowerBucket.addFlowerPack(flowerPack);
-        Assertions.assertEquals(10.0, flowerBucket.getPrice(), 0.01);
+        Assertions.assertEquals(10.0, flowerBucket.getPrice());
     }
 }
 

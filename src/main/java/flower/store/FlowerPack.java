@@ -12,8 +12,13 @@ public class FlowerPack {
         this.quantity = quantity;
     }
 
-    public void setQuantity(int quantity){
-        this.quantity = quantity > 0 ? quantity : 1;
+    public void setQuantity(double quantity) {
+        if (quantity > 0) {
+            this.quantity = quantity;
+        }
+        else {
+            this.quantity = 1;
+        }
     }
 
     public double getPrice() {
